@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Car.Repositories\Car.Data.csproj" />
     <ProjectReference Include="..\Car.Services\Car.Services.csproj" />
   </ItemGroup>
 

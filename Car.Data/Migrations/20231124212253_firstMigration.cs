@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace Car.Repositories.Migrations
+namespace Car.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class firstMig : Migration
+    public partial class firstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

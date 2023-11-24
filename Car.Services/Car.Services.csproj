@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Car.Repositories\Car.Data.csproj" />
+    <ProjectReference Include="..\Car.Data\Car.Data.csproj" />
   </ItemGroup>
 
 </Project>

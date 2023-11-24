@@ -1,5 +1,5 @@
-﻿using Car.Data.Entity;
-using Car.Repositories.Context;
+﻿using Car.Data.Context;
+using Car.Data.Entity;
 using Car.Services.Abstract;
 using Car.Services.Models;
 using Microsoft.EntityFrameworkCore;

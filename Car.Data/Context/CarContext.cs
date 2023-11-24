@@ -1,7 +1,7 @@
 ﻿using Car.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Car.Repositories.Context
+namespace Car.Data.Context
 {
     public class CarContext : DbContext
     {
