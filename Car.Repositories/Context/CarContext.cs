@@ -1,7 +1,7 @@
-﻿using Entities.Entity;
+﻿using Car.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Repositories.Context
+namespace Car.Repositories.Context
 {
     public class CarContext : DbContext
     {
@@ -18,7 +18,6 @@ namespace Repositories.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=DESKTOP-MJTOPVQ\\SQLEXPRESS;Database=Cars;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -26,10 +25,10 @@ namespace Repositories.Context
 
             builder.Entity<CarSales>(entity =>
             {
-                entity.HasKey(e => e.SerialNumber);
+                entity.HasKey(e => e.Id);
             });
         }
-        public DbSet<CarSales> Cars { get; set; }
+        public DbSet<CarSales> CarSales { get; set; }
 
     }
 }
